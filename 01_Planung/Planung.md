@@ -25,10 +25,10 @@ Diese Umgebung umfasst:
 
 | Feld                                | Wert |
 | ----------------------------------- | ---- |
-| Vorname                             |      |
-| Nachname                            |      |
-| Klasse                              |      |
-| Dokumentation (GIT-Repository-Link) |      |
+| Koichiro                       |      |
+| Möller                        |      |
+| PE23e                         |      |
+| https://github.com/ginsonsitocoolboy/M159.git |      |
 
 ---
 
@@ -51,7 +51,7 @@ Alle weiteren Ports sind nur innerhalb des VPCs offen.
 
 | Komponente                      | VPC-ID                | CIDR        | Name |
 | ------------------------------- | --------------------- | ----------- | ---- |
-| VPC                             | vpc-0470f613e45697700 | 10.0.0.0/16 |      |
+| VPC                             | vpc-0b9717ea4b3f1f559 | 10.150.0.0/24 |      |
 | M159-subnet-private1-us-east-1a |                       |             |      |
 | M159-subnet-private2-us-east-1b |                       |             |      |
 | M159-subnet-public1-us-east-1a  |                       |             |      |
