@@ -24,7 +24,7 @@ Ich habe einen WMI-Filter erstellt, der nur Windows-10-Clients erkennt. Das GPO 
 Teil 5: Drucker verteilen
 Ich habe zwei fiktive Drucker eingerichtet: Drucker_Farbe und Drucker_SW. Beide wurden freigegeben und per GPO über UNC-Pfad verteilt. Die Funktion habe ich getestet, indem ich die Drucker gelöscht und mit gpupdate /force neu hinzugefügt habe.
 ![alt text](image-10.png)
-<video controls src="2025-11-01 23-40-10.mp4" title="Title"></video>
+<video controls src="2025-11-01 23-40-10 (1).mp4" title="Title"></video>
 
 Teil 6: 7-Zip per GPO
 Ich habe ein MSI-Paket von 7-Zip auf einer Freigabe bereitgestellt und ein GPO zur automatischen Installation auf Domain-Computern erstellt. Nur Computer in der Security Group „7-Zip“ erhalten die Software. Die erfolgreiche Installation habe ich über das Eventlog überprüft.
