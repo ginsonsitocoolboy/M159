@@ -13,10 +13,8 @@ In diesem Dokument werden sämtliche Angaben sowie Passwörter, welche Sie für 
 Diese Umgebung umfasst:
 
 - **1x Windows Server (DC)** auf AWS EC2  
-- **1x Windows Server (Client)** auf AWS EC2 (da AWS keine Windows Clients anbietet)  
-- **1x Windows Server (Admin Center)** auf AWS EC2 zur Verwaltung der AWS Managed AD  
+- **1x Windows Server (Client)** auf AWS EC2 (da AWS keine Windows Clients AD  
 - **AWS Managed AD** mit Trust zur On-Premises(EC2) AD  
-- **Entra Connect** zur Synchronisation mit Entra ID sowie Entra AD  
 - **Lokale AD-Domain** (zu Beginn), später **öffentliche Domain als UPN**  
 
 ---
