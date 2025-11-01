@@ -2,7 +2,7 @@
 
 In diesem Dokument werden sämtliche Angaben sowie Passwörter, welche Sie für die Installation Ihrer Umgebung benötigen, festgehalten.
 
-![Modul_159_Architekturdiagramm](Modul_159_Architekturdiagramm.drawio.svg)
+
 
 
 
@@ -31,6 +31,35 @@ Diese Umgebung umfasst:
 | https://github.com/ginsonsitocoolboy/M159.git |      |
 
 ---
+
+
+### Subnets
+
+| Subnetzname                            | Subnetz-ID           | Verfügbare Zone | IPv4-CIDR       | Routing-Tabelle                        |
+| -------------------------------------- | -------------------- | ---------------- | ---------------- | -------------------------------------- |
+| M159_vpc-subnet-public1-us-east-1a     | subnet-0407b1c73ea3133da | us-east-1a       | 10.150.0.0/28    | M159_vpc-rtb-public                    |
+| M159_vpc-subnet-public2-us-east-1b     | subnet-0e43c14e9ca2df168 | us-east-1b       | 10.150.0.16/28   | M159_vpc-rtb-public                    |
+| M159_vpc-subnet-private1-us-east-1a    | subnet-067852295e2b90ff7 | us-east-1a       | 10.150.0.128/28  | M159_vpc-rtb-private1-us-east-1a       |
+| M159_vpc-subnet-private2-us-east-1b    | subnet-015e66056e2ff6531 | us-east-1b       | 10.150.0.144/28  | M159_vpc-rtb-private2-us-east-1b       |
+
+
+
+
+---
+
+##  EC2-Instanzen
+
+| Komponente                                       | FQDN                       | Elastic IP       | Private IP (CIDR) | Subnetz                          | DNS-Server 1 | DNS-Server 2 | Lokaler Admin | Kennwort |
+| ------------------------------------------------ | -------------------------- | ---------------- | ----------------- | -------------------------------- | ------------ | ------------ | ------------- | -------- |
+| IaaS/OnPrem AD DC                                | dc.aws.km.m159             | 174.129.18.194   | 10.150.0.10       | M159-subnet-public1-us-east-1a   | 10.150.0.10  | 10.150.0.11  | Administrator |  pQ7F*LaJATw;tSUgBjLJY@8b8nl0&rfG
+| Windows Server (Client)                          | client.aws.km.m159         | 98.89.131.245    | 10.150.0.11       | M159-subnet-public1-us-east-1a   | 10.150.0.10  | 10.150.0.11  | Administrator |  yIz@F-3HBVO;vuw=SoSpt;T?P5hG*5T4
+
+
+
+
+
+
+
 ---
 
 ## 3. AWS VPC Setup
@@ -94,8 +123,8 @@ Alle weiteren Ports sind nur innerhalb des VPCs offen.
 | Active Directory Third-Level-Domäne-1 | aws.km.m159           |
 | Öffentlicher UPN-Suffix (später)      | m159km.v6.rocks       |
 | Domänenadministrator                  | Administrator         |
-| Kennwort Domänenadministrator         | (wird lokal dokumentiert) |
-| Kennwort-Demote (Herunterstufen)      | (wird lokal dokumentiert) |
+| Kennwort Domänenadministrator         | Pa55word.1|
+| Kennwort-Demote (Herunterstufen)      | Pa55word.1 |
 
 
 
@@ -106,7 +135,7 @@ Alle weiteren Ports sind nur innerhalb des VPCs offen.
 | Active Directory Third-Level-Domäne-2 | aws.km.m159                                          |
 | Trust-Typ                             | Tree-Root Trust                                      |
 | AWS Managed Admin User                | admin                                                |
-| AWS Managed Admin Passwort            | (wird lokal dokumentiert)                            |
+| AWS Managed Admin Passwort            | Pa55word.1                            |
 | IP-Adresse                            | 10.150.0.10                                          |
 | DNS-Server 1                          | 10.150.0.10                                          |
 | DNS-Server 2                          | 10.150.0.11                                          |
