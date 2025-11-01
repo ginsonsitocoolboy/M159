@@ -132,26 +132,11 @@ Alle weiteren Ports sind nur innerhalb des VPCs offen.
 
 Definieren Sie je einen Benutzer dieser 3 Abteilungen 
 
-| Abteilung | Name der Abteilung | Benutzername | Vorname | Nachname | Kennwort | Bereiche |
-| --------- | ------------------ | ------------ | ------- | -------- | -------- | -------- |
-| 1         | Sekretariat        |              |         |          |          | intern   |
-| 2         | Buchhaltung        |              |         |          |          | intern   |
-| 3         | GL                 |              |         |          |          | intern   |
-| 4         | Promoter           |              |         |          |          | extern   |
-
-## 08. Python-App-Registration (Entra-ID)
-
-| Name                    | Wert |
-| ----------------------- | ---- |
-| Directory (tenant) ID   |      |
-| Application (client) ID |      |
-| Client Secret ID        |      |
+| Abteilung | Name der Abteilung | Benutzername | Kennwort | Bereiche |
+| --------- | ------------------ | ------------ | -------- | -------- |
+| 1         | Sekretariat        |  sek.user          |  Pa55word1       |                  intern   |
+| 2         | Buchhaltung        |  buch.user        |  Pa55word.1       |                    intern   |
+| 3         | GL                 |  GL.user            | Pa55word.1        |                   intern   |
+| 4         | Promoter           |  promo.user            | Pa55word.1        |                extern   |
 
 
-
-## 09. Hinweise
-
-- Beginnen Sie mit der lokalen Domain-Umgebung und konfigurieren Sie **später den UPN-Suffix** mit der öffentlichen Domain.  
-- Achten Sie auf **richtige Portfreigaben** in den AWS Sicherheitsgruppen, insbesondere für RDP, SMB und AD-Dienste.  
-- Dokumentieren Sie alle IP-Adressen, Benutzernamen und Kennwörter konsequent in dieser Vorlage.
-- Diese Vorlage wurde für das Schuljahr 2025/26 komplett neu erstellt. Falls Ihnen etwas fehlt, ist die Lehrperson dankbar, wenn Sie ihr dies mitteilen.
